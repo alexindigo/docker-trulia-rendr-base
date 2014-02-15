@@ -1,3 +1,3 @@
 # docker-rendr-base
 
-Base Rendr application docker container, based on alexindigo/docker-node-dev
+Base Rendr application docker container for Trulia, based on alexindigo/docker-node-dev
