@@ -7,8 +7,6 @@
 FROM      alexindigo/node-dev
 MAINTAINER Alex Indigo <iam@alexindigo.com>
 
-FROM      alexindigo/node-dev
-
 # Preparations
 ENV PHANTOMJS_URL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
 
