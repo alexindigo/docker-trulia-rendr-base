@@ -12,7 +12,6 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install external services
 # - Sass needs rubygems
-# - Phantomjs needs fontconfig
 RUN       apt-get update && apt-get install -y rubygems
 
 # Install ruby deps
