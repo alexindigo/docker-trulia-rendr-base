@@ -19,10 +19,10 @@ ENV       DEBIAN_FRONTEND noninteractive
 RUN       apt-get update && apt-get install -y rubygems fontconfig
 
 # Install PhantomJS
-RUN       curl -s ${PHANTOMJS_URL} -o /usr/local/share/phantomjs.tar.bz2
+RUN       curl -s -L ${PHANTOMJS_URL} -o "phantomjs.tar.bz2"
 RUN       mkdir -p /usr/local/share/phantomjs && \
-          tar -C /usr/local/share/phantomjs --strip-components 1 -xjf /usr/local/share/phantomjs.tar.bz2 && \
-          rm /usr/local/share/phantomjs.tar.bz2
+          tar -C /usr/local/share/phantomjs --strip-components 1 -xjf phantomjs.tar.bz2 && \
+          rm phantomjs.tar.bz2
 RUN       ln -s /usr/local/share/phantomjs/bin/phantomjs /usr/local/bin/phantomjs
 
 # Install ruby deps
