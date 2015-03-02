@@ -4,11 +4,11 @@
 # $ docker run -t -i -v $(pwd):/www -p 3030:3030 -p 8080:8080 alexindigo/trulia-rendr-base <command>
 #
 # alexindigo/rendr-base
-FROM      alexindigo/node-dev:0.10.29
+FROM      alexindigo/node-dev:0.12.0
 MAINTAINER Alex Indigo <iam@alexindigo.com>
 
 # Preparations
-ENV       PHANTOMJS_URL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
+ENV       PHANTOMJS_URL https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2
 
 # Make DEBIAN_FRONTEND less chatty
 ENV       DEBIAN_FRONTEND noninteractive
