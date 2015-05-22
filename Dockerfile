@@ -37,7 +37,7 @@ VOLUME    ["/www"]
 WORKDIR   /www
 
 # Open ports
-EXPOSE    3030
+EXPOSE    3030-4030
 EXPOSE    5858
 EXPOSE    8080
 
